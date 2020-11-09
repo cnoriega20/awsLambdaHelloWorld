@@ -18,7 +18,7 @@ public class LambdaFunctionHandlerTest {
     @BeforeClass
     public static void createInput() throws IOException {
         // TODO: set up your sample input object here.
-        input = null;
+        input = "Cesar";
     }
 
     private Context createContext() {
@@ -38,6 +38,6 @@ public class LambdaFunctionHandlerTest {
         String output = handler.handleRequest(input, ctx);
 
         // TODO: validate output here if needed.
-        Assert.assertEquals("Hello from Lambda!", output);
+        Assert.assertEquals("Hello, " + input + "!", output);
     }
 }

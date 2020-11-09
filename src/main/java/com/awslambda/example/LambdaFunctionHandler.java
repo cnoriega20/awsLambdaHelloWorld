@@ -10,7 +10,9 @@ public class LambdaFunctionHandler implements RequestHandler<Object, String> {
         context.getLogger().log("Input: " + input);
 
         // TODO: implement your handler
-        return "Hello from Lambda!";
+        String output = "Hello, " + input + "!";
+        
+        return output;
     }
 
 }
